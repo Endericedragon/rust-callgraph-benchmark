@@ -1,0 +1,802 @@
+{
+    "crate_metadata": [
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/structs#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/generics#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc#0.0.0"
+        },
+        {
+            "manifest_path": "Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/main#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/conditionally_compiled/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/conditionally_compiled#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core#0.0.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std#0.0.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/macros/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/macros#0.1.0"
+        },
+        {
+            "manifest_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/static_dispatch/Cargo.toml",
+            "root_package_id": "path+file:///home/endericedragon/playground/rust-callgraph-benchmark/src/static_dispatch#0.1.0"
+        }
+    ],
+    "func_metadata": [
+        {
+            "def_id": "DefId(21:20 ~ structs[0098]::lib::fat::{impl#2}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/fat.rs",
+            "line_num": 39,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(5:65 ~ alloc[6a28]::raw_vec::{impl#2}::current_memory)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 254,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(24:8 ~ dynamic_dispatch[68c0]::lib::dynamic_ufcs)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "line_num": 23,
+            "crate_metadata_idx": 2
+        },
+        {
+            "def_id": "DefId(23:34 ~ generics[cb64]::lib::impl_trait)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 37,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(25:13 ~ function_pointers[41a2]::lib::indirection_trait_object)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "line_num": 27,
+            "crate_metadata_idx": 1
+        },
+        {
+            "def_id": "DefId(21:35 ~ structs[0098]::lib::thin::{impl#0}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/thin.rs",
+            "line_num": 7,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(2:31667 ~ core[cc6c]::cmp::impls::{impl#55}::cmp)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs",
+            "line_num": 1520,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(2:9983 ~ core[cc6c]::fmt::{impl#2}::new_const)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/fmt/mod.rs",
+            "line_num": 320,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(21:13 ~ structs[0098]::lib::fat::{impl#0}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/fat.rs",
+            "line_num": 8,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "line_num": 8,
+            "crate_metadata_idx": 1
+        },
+        {
+            "def_id": "DefId(2:2568 ~ core[cc6c]::cmp::max_by)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs",
+            "line_num": 1299,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(25:26 ~ function_pointers[41a2]::bench::helpers::m2)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "line_num": 70,
+            "crate_metadata_idx": 1
+        },
+        {
+            "def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "line_num": 52,
+            "crate_metadata_idx": 2
+        },
+        {
+            "def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 411,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(5:127 ~ alloc[6a28]::alloc::handle_alloc_error)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs",
+            "line_num": 374,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(23:52 ~ generics[cb64]::bench::{impl#0}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 77,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "define_path": "src/main.rs",
+            "line_num": 2,
+            "crate_metadata_idx": 5
+        },
+        {
+            "def_id": "DefId(5:124 ~ alloc[6a28]::alloc::exchange_malloc)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs",
+            "line_num": 327,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(0:5 ~ main[b907]::main)",
+            "define_path": "src/main.rs",
+            "line_num": 14,
+            "crate_metadata_idx": 5
+        },
+        {
+            "def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/fmt/mod.rs",
+            "line_num": 330,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(2:1418 ~ core[cc6c]::intrinsics::{extern#0}::unlikely)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/intrinsics.rs",
+            "line_num": 983,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(23:30 ~ generics[cb64]::lib::monomorphized)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 21,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(23:13 ~ generics[cb64]::base::{impl#0}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/base.rs",
+            "line_num": 11,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(5:5347 ~ alloc[6a28]::slice::hack::into_vec)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+            "line_num": 99,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/macros/src/lib.rs",
+            "line_num": 34,
+            "crate_metadata_idx": 9
+        },
+        {
+            "def_id": "DefId(2:9299 ~ core[cc6c]::result::{impl#0}::map_err)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs",
+            "line_num": 825,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(25:14 ~ function_pointers[41a2]::lib::indirection_fn_trait)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "line_num": 39,
+            "crate_metadata_idx": 1
+        },
+        {
+            "def_id": "DefId(5:86 ~ alloc[6a28]::raw_vec::finish_grow)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 499,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(24:9 ~ dynamic_dispatch[68c0]::lib::dynamic_default)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "line_num": 33,
+            "crate_metadata_idx": 2
+        },
+        {
+            "def_id": "DefId(5:71 ~ alloc[6a28]::raw_vec::{impl#2}::reserve_for_push)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 316,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(24:7 ~ dynamic_dispatch[68c0]::lib::dynamic)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "line_num": 16,
+            "crate_metadata_idx": 2
+        },
+        {
+            "def_id": "DefId(5:97 ~ alloc[6a28]::raw_vec::capacity_overflow)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 568,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(23:17 ~ generics[cb64]::base::{impl#2}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/base.rs",
+            "line_num": 23,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(5:121 ~ alloc[6a28]::alloc::{impl#1}::grow)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs",
+            "line_num": 258,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(2:9123 ~ core[cc6c]::panicking::panic_fmt)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panicking.rs",
+            "line_num": 51,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(23:37 ~ generics[cb64]::lib::monomorphized_where)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 55,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(26:9 ~ conditionally_compiled[22ae]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/conditionally_compiled/src/lib.rs",
+            "line_num": 36,
+            "crate_metadata_idx": 6
+        },
+        {
+            "def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "line_num": 75,
+            "crate_metadata_idx": 1
+        },
+        {
+            "def_id": "DefId(5:7075 ~ alloc[6a28]::vec::{impl#1}::push)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/vec/mod.rs",
+            "line_num": 1917,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(20:4 ~ static_dispatch[e39e]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/static_dispatch/src/lib.rs",
+            "line_num": 1,
+            "crate_metadata_idx": 10
+        },
+        {
+            "def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 29,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(21:26 ~ structs[0098]::lib::fat::{impl#4}::default_method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/fat.rs",
+            "line_num": 59,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 82,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(23:35 ~ generics[cb64]::lib::monomorphized_i32)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "line_num": 47,
+            "crate_metadata_idx": 3
+        },
+        {
+            "def_id": "DefId(20:8 ~ static_dispatch[e39e]::bench_method_lookup::run)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/static_dispatch/src/lib.rs",
+            "line_num": 43,
+            "crate_metadata_idx": 10
+        },
+        {
+            "def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/io/stdio.rs",
+            "line_num": 1104,
+            "crate_metadata_idx": 8
+        },
+        {
+            "def_id": "DefId(5:118 ~ alloc[6a28]::alloc::{impl#1}::allocate)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs",
+            "line_num": 239,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(21:39 ~ structs[0098]::lib::thin::{impl#2}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/thin.rs",
+            "line_num": 19,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(2:13444 ~ core[cc6c]::alloc::layout::{impl#0}::array::inner)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs",
+            "line_num": 437,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(2:43817 ~ core[cc6c]::slice::iter::{impl#181}::next)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/iter/macros.rs",
+            "line_num": 155,
+            "crate_metadata_idx": 7
+        },
+        {
+            "def_id": "DefId(5:94 ~ alloc[6a28]::raw_vec::handle_reserve)",
+            "define_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "line_num": 538,
+            "crate_metadata_idx": 4
+        },
+        {
+            "def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/structs/src/lib/fat.rs",
+            "line_num": 33,
+            "crate_metadata_idx": 0
+        },
+        {
+            "def_id": "DefId(23:15 ~ generics[cb64]::base::{impl#1}::method)",
+            "define_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/base.rs",
+            "line_num": 17,
+            "crate_metadata_idx": 3
+        }
+    ],
+    "callsite_metadata": [
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(21:39 ~ structs[0098]::lib::thin::{impl#2}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 48
+        },
+        {
+            "caller_def_id": "DefId(20:8 ~ static_dispatch[e39e]::bench_method_lookup::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(23:35 ~ generics[cb64]::lib::monomorphized_i32)",
+            "callee_def_id": "DefId(23:52 ~ generics[cb64]::bench::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 51
+        },
+        {
+            "caller_def_id": "DefId(20:8 ~ static_dispatch[e39e]::bench_method_lookup::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:30 ~ generics[cb64]::lib::monomorphized)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 90
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(24:7 ~ dynamic_dispatch[68c0]::lib::dynamic)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 69
+        },
+        {
+            "caller_def_id": "DefId(23:30 ~ generics[cb64]::lib::monomorphized)",
+            "callee_def_id": "DefId(23:13 ~ generics[cb64]::base::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 25
+        },
+        {
+            "caller_def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "callee_def_id": "DefId(23:17 ~ generics[cb64]::base::{impl#2}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 35
+        },
+        {
+            "caller_def_id": "DefId(5:71 ~ alloc[6a28]::raw_vec::{impl#2}::reserve_for_push)",
+            "callee_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "caller_line_num": 318
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(20:8 ~ static_dispatch[e39e]::bench_method_lookup::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "callee_def_id": "DefId(2:9983 ~ core[cc6c]::fmt::{impl#2}::new_const)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs",
+            "caller_line_num": 106
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 94
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(5:71 ~ alloc[6a28]::raw_vec::{impl#2}::reserve_for_push)",
+            "callee_def_id": "DefId(5:94 ~ alloc[6a28]::raw_vec::handle_reserve)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "caller_line_num": 318
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(21:35 ~ structs[0098]::lib::thin::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 108
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(2:43817 ~ core[cc6c]::slice::iter::{impl#181}::next)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 104
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:35 ~ generics[cb64]::lib::monomorphized_i32)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 113
+        },
+        {
+            "caller_def_id": "DefId(26:9 ~ conditionally_compiled[22ae]::bench::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(20:4 ~ static_dispatch[e39e]::bench::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(24:9 ~ dynamic_dispatch[68c0]::lib::dynamic_default)",
+            "callee_def_id": "DefId(21:26 ~ structs[0098]::lib::fat::{impl#4}::default_method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 38
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(25:13 ~ function_pointers[41a2]::lib::indirection_trait_object)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 107
+        },
+        {
+            "caller_def_id": "DefId(25:26 ~ function_pointers[41a2]::bench::helpers::m2)",
+            "callee_def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 72
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 100
+        },
+        {
+            "caller_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "callee_def_id": "DefId(2:1418 ~ core[cc6c]::intrinsics::{extern#0}::unlikely)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs",
+            "caller_line_num": 25
+        },
+        {
+            "caller_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "callee_def_id": "DefId(21:13 ~ structs[0098]::lib::fat::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 13
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 94
+        },
+        {
+            "caller_def_id": "DefId(2:9983 ~ core[cc6c]::fmt::{impl#2}::new_const)",
+            "callee_def_id": "DefId(2:9983 ~ core[cc6c]::fmt::{impl#2}::new_const)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs",
+            "caller_line_num": 106
+        },
+        {
+            "caller_def_id": "DefId(23:37 ~ generics[cb64]::lib::monomorphized_where)",
+            "callee_def_id": "DefId(23:52 ~ generics[cb64]::bench::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 61
+        },
+        {
+            "caller_def_id": "DefId(25:13 ~ function_pointers[41a2]::lib::indirection_trait_object)",
+            "callee_def_id": "DefId(25:26 ~ function_pointers[41a2]::bench::helpers::m2)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 32
+        },
+        {
+            "caller_def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "callee_def_id": "DefId(23:15 ~ generics[cb64]::base::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 35
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(5:5347 ~ alloc[6a28]::slice::hack::into_vec)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+            "caller_line_num": 463
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:34 ~ generics[cb64]::lib::impl_trait)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 109
+        },
+        {
+            "caller_def_id": "DefId(2:9983 ~ core[cc6c]::fmt::{impl#2}::new_const)",
+            "callee_def_id": "DefId(2:9123 ~ core[cc6c]::panicking::panic_fmt)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs",
+            "caller_line_num": 106
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:32 ~ generics[cb64]::lib::monomorphized_foreign_bound)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 105
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "callee_def_id": "DefId(2:2568 ~ core[cc6c]::cmp::max_by)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs",
+            "caller_line_num": 834
+        },
+        {
+            "caller_def_id": "DefId(24:8 ~ dynamic_dispatch[68c0]::lib::dynamic_ufcs)",
+            "callee_def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 28
+        },
+        {
+            "caller_def_id": "DefId(20:4 ~ static_dispatch[e39e]::bench::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "callee_def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 13
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(25:14 ~ function_pointers[41a2]::lib::indirection_fn_trait)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 111
+        },
+        {
+            "caller_def_id": "DefId(0:5 ~ main[b907]::main)",
+            "callee_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 27
+        },
+        {
+            "caller_def_id": "DefId(5:7075 ~ alloc[6a28]::vec::{impl#1}::push)",
+            "callee_def_id": "DefId(5:71 ~ alloc[6a28]::raw_vec::{impl#2}::reserve_for_push)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/vec/mod.rs",
+            "caller_line_num": 1922
+        },
+        {
+            "caller_def_id": "DefId(26:9 ~ conditionally_compiled[22ae]::bench::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(5:94 ~ alloc[6a28]::raw_vec::handle_reserve)",
+            "callee_def_id": "DefId(5:97 ~ alloc[6a28]::raw_vec::capacity_overflow)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "caller_line_num": 541
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "callee_def_id": "DefId(1:3402 ~ std[4337]::io::stdio::_print)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(24:9 ~ dynamic_dispatch[68c0]::lib::dynamic_default)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 85
+        },
+        {
+            "caller_def_id": "DefId(0:5 ~ main[b907]::main)",
+            "callee_def_id": "DefId(2:43817 ~ core[cc6c]::slice::iter::{impl#181}::next)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 26
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(26:9 ~ conditionally_compiled[22ae]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "callee_def_id": "DefId(2:9123 ~ core[cc6c]::panicking::panic_fmt)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/panic.rs",
+            "caller_line_num": 106
+        },
+        {
+            "caller_def_id": "DefId(2:2568 ~ core[cc6c]::cmp::max_by)",
+            "callee_def_id": "DefId(2:31667 ~ core[cc6c]::cmp::impls::{impl#55}::cmp)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs",
+            "caller_line_num": 1301
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(21:13 ~ structs[0098]::lib::fat::{impl#0}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 20
+        },
+        {
+            "caller_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "callee_def_id": "DefId(21:20 ~ structs[0098]::lib::fat::{impl#2}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 13
+        },
+        {
+            "caller_def_id": "DefId(24:7 ~ dynamic_dispatch[68c0]::lib::dynamic)",
+            "callee_def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 21
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "callee_def_id": "DefId(2:43817 ~ core[cc6c]::slice::iter::{impl#181}::next)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/macros/src/lib.rs",
+            "caller_line_num": 50
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(21:18 ~ structs[0098]::lib::fat::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 108
+        },
+        {
+            "caller_def_id": "DefId(23:53 ~ generics[cb64]::bench::run)",
+            "callee_def_id": "DefId(23:37 ~ generics[cb64]::lib::monomorphized_where)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 119
+        },
+        {
+            "caller_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "callee_def_id": "DefId(5:86 ~ alloc[6a28]::raw_vec::finish_grow)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "caller_line_num": 433
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 82
+        },
+        {
+            "caller_def_id": "DefId(0:4 ~ main[b907]::helpers::run_benchmark)",
+            "callee_def_id": "DefId(20:4 ~ static_dispatch[e39e]::bench::run)",
+            "caller_file_path": "src/main.rs",
+            "caller_line_num": 10
+        },
+        {
+            "caller_def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "callee_def_id": "DefId(5:7075 ~ alloc[6a28]::vec::{impl#1}::push)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/macros/src/lib.rs",
+            "caller_line_num": 20
+        },
+        {
+            "caller_def_id": "DefId(25:27 ~ function_pointers[41a2]::bench::run)",
+            "callee_def_id": "DefId(25:10 ~ function_pointers[41a2]::lib::indirection)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/function_pointers/src/lib.rs",
+            "caller_line_num": 87
+        },
+        {
+            "caller_def_id": "DefId(27:8 ~ macros[9ec7]::bench::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(24:8 ~ dynamic_dispatch[68c0]::lib::dynamic_ufcs)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/dynamic_dispatch/src/lib.rs",
+            "caller_line_num": 75
+        },
+        {
+            "caller_def_id": "DefId(24:13 ~ dynamic_dispatch[68c0]::bench::run)",
+            "callee_def_id": "DefId(2:9984 ~ core[cc6c]::fmt::{impl#2}::new_v1)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs",
+            "caller_line_num": 143
+        },
+        {
+            "caller_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "callee_def_id": "DefId(2:13444 ~ core[cc6c]::alloc::layout::{impl#0}::array::inner)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs",
+            "caller_line_num": 435
+        },
+        {
+            "caller_def_id": "DefId(23:34 ~ generics[cb64]::lib::impl_trait)",
+            "callee_def_id": "DefId(23:15 ~ generics[cb64]::base::{impl#1}::method)",
+            "caller_file_path": "/home/endericedragon/playground/rust-callgraph-benchmark/src/generics/src/lib.rs",
+            "caller_line_num": 43
+        },
+        {
+            "caller_def_id": "DefId(5:81 ~ alloc[6a28]::raw_vec::{impl#3}::grow_amortized)",
+            "callee_def_id": "DefId(5:65 ~ alloc[6a28]::raw_vec::{impl#2}::current_memory)",
+            "caller_file_path": "/home/endericedragon/.rustup/toolchains/nightly-2024-02-03-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/raw_vec.rs",
+            "caller_line_num": 433
+        }
+    ]
+}

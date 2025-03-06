@@ -23,7 +23,7 @@ fn main() {
         macros::bench::run,
     ];
 
-    for bench in benchmarks.into_iter() {
+    for bench in benchmarks.iter() {
         helpers::run_benchmark(bench);
     }
 }

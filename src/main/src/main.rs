@@ -1,6 +1,6 @@
 mod helpers {
     // Accepts a function pointer as its argument and calls the function it points to.
-    pub fn run_benchmark(bench: &fn () -> ()) {
+pub fn run_benchmark(bench: &fn () -> ()) {/* used */
         // There is a dedicated function pointers benchmark. However, it does not hurt to test the
         // call-graph generator again at this point. This is part of the benchmark after all.
 
@@ -12,7 +12,7 @@ mod helpers {
     }
 }
 
-fn main() {
+fn main() {/* used */
     let benchmarks = [
         static_dispatch::bench::run,
         static_dispatch::bench_method_lookup::run,

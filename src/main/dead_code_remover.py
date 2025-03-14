@@ -25,12 +25,11 @@ from pathlib import Path
 #         content[each["line_num"]] = content[each["line_num"]].strip() + f"/* used */\n"
 #     with open(k, "w", encoding="utf-8") as f:
 #         f.writelines(content)
+
 from re import search
 import json
 from collections import defaultdict
 from bisect import bisect_left
-
-root = Path(".")
 
 
 def find_rust_func_span(lines: list[str], lo: int) -> tuple[int, int]:
@@ -57,27 +56,6 @@ def find_rust_func_span(lines: list[str], lo: int) -> tuple[int, int]:
     return (lo, hi)
 
 
-def traverse(path: Path):
-    for child in path.iterdir():
-        if child.is_dir():
-            traverse(child)
-        elif child.suffix == ".rs":
-            with open(child, "r", encoding="utf-8") as f:
-                content = f.readlines()
-            for line_num, line in enumerate(content):
-                line = line.strip()
-                if line.startswith("//"):
-                    continue
-                if search(r"fn [a-zA-Z_][a-zA-Z_\d]+\(", line) is not None:
-                    print("File:", child)
-                    span = find_rust_func_span(content, line_num)
-                    for i in range(span[0], span[1]):
-                        print(f"{i:04d}|{content[i].rstrip()}")
-            del content
-
-
-# traverse(root)
-
 with open("om.json", "r", encoding="utf-8") as f:
     om = json.load(f)
 
@@ -96,8 +74,16 @@ for source_code_path, func_infos in dir_tree.items():
         content = f.readlines()
     for line_num, line in enumerate(content):
         if search(r"fn [a-zA-Z_][a-zA-Z_\d]+\(", line) is not None:
+            # 是函数定义
             span = find_rust_func_span(content, line_num)
-            if func_infos[bisect_left(func_infos, line_num)] != span[0]:
+            if any([x for x in func_infos if x == span[0]]):
+                # 是活跃代码
+                continue
+            else:
                 print(f"Dead code found in {source_code_path}!")
                 for i in range(span[0], span[1]):
-                    print(f"{i:04d}|{content[i].rstrip()}")
+                    content[i] = f"// {content[i]}"
+                    # print(f"{i:04d}|{content[i].rstrip()}")
+    with open(source_code_path, "w", encoding="utf-8") as f:
+        f.writelines(content)
+    del content

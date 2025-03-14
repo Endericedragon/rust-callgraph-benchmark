@@ -32,7 +32,7 @@ from collections import defaultdict
 from bisect import bisect_left
 
 
-def find_rust_func_span(lines: list[str], lo: int) -> tuple[int, int]:
+def find_rust_block_span(lines: list[str], lo: int) -> tuple[int, int]:
     hi: int = lo
     curly_brackets: int = 0
     while curly_brackets == 0:
@@ -68,22 +68,41 @@ for each in om["func_metadata"]:
 
 del om
 
+counter: int = 0
+
 for source_code_path, func_infos in dir_tree.items():
     func_infos.sort()
     with open(source_code_path, "r", encoding="utf-8") as f:
         content = f.readlines()
-    for line_num, line in enumerate(content):
-        if search(r"fn [a-zA-Z_][a-zA-Z_\d]+\(", line) is not None:
+    line_num: int = 0
+    while line_num < len(content):
+        line = content[line_num]
+        if search(r"(pub\s*)?trait\s+[a-zA-Z_][a-zA-Z_\d]+", line) is not None:
+            # 是trait定义
+            span = find_rust_block_span(content, line_num)
+            line_num = span[1]
+        elif search(r"impl\s+[^\s]+\s+for\s+[a-zA-Z_][a-zA-Z_\d]+", line) is not None:
+            # 是impl定义
+            span = find_rust_block_span(content, line_num)
+            line_num = span[1]
+        elif search(r"fn [a-zA-Z_][a-zA-Z_\d]+\(", line) is not None:
             # 是函数定义
-            span = find_rust_func_span(content, line_num)
-            if any([x for x in func_infos if x == span[0]]):
-                # 是活跃代码
+            span = find_rust_block_span(content, line_num)
+            if any([x for x in func_infos if x == span[0]]) or content[
+                span[1] - 1
+            ].rstrip().endswith(";"):
+                # 是活跃代码，或无默认实现的trait方法
+                line_num = span[1]
                 continue
             else:
                 print(f"Dead code found in {source_code_path}!")
                 for i in range(span[0], span[1]):
                     content[i] = f"// {content[i]}"
+                    counter += 1
                     # print(f"{i:04d}|{content[i].rstrip()}")
+        line_num += 1
     with open(source_code_path, "w", encoding="utf-8") as f:
         f.writelines(content)
     del content
+
+print(counter)

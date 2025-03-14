@@ -8,12 +8,12 @@ pub mod lib {
         foo()
     }
 
-    #[cfg(feature = "foo")]
-    pub fn foo() -> u32 {
-        // static function call
-        // conditionally_compiled::lib::base_one
-        base_one()
-    }
+    // #[cfg(feature = "foo")]
+//     pub fn foo() -> u32 {
+//         // static function call
+//         // conditionally_compiled::lib::base_one
+//         base_one()
+//     }
 
     #[cfg(not(feature = "foo"))]
     pub fn foo() -> u32 {
@@ -23,9 +23,9 @@ pub mod lib {
     }
 
     #[allow(dead_code)]
-    fn base_one() -> u32 {
-        1
-    }
+//     fn base_one() -> u32 {
+//         1
+//     }
 
     #[allow(dead_code)]
     fn base_two() -> u32 {

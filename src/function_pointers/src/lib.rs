@@ -21,9 +21,9 @@ pub mod lib {
     }
 
     // Equivalent to indirection(foo: &Fat, fun: FatMethod) -> u32
-    // fn indirection_concretized_generic(foo: &Fat, fun: GenMethod<Fat>) -> u32 {
-    //     fun(foo)
-    // }
+//     // fn indirection_concretized_generic(foo: &Fat, fun: GenMethod<Fat>) -> u32 {
+//     //     fun(foo)
+//     // }
 
     pub fn indirection_trait_object(foo: &dyn FooTrait, fun: FooMethod) -> u32 {
         // function pointer call
@@ -33,9 +33,9 @@ pub mod lib {
     }
 
     // Equivalent to indirection_trait_object(foo: &dyn FooTrait, fun: FooMethod) -> u32
-    // fn indirection_sixth(foo: impl FooTrait + 'static, fun: GenMethod<dyn FooTrait>) -> u32 {
-    //     fun(&foo)
-    // }
+//     // fn indirection_sixth(foo: impl FooTrait + 'static, fun: GenMethod<dyn FooTrait>) -> u32 {
+//     //     fun(&foo)
+//     // }
 
     pub fn indirection_fn_trait(foo: &Fat, fun: &dyn Fn(&Fat) -> u32) -> u32 {
         // instance method call (trait - std::ops::Fn::call)
@@ -64,9 +64,9 @@ pub mod bench {
         // is sound as the function signatures match, meaning that a variable that points to 'm2'
         // could also point to 'm1'.
         #[allow(dead_code)]
-        pub fn m1(obj: &dyn FooTrait) -> u32 {
-            obj.method()
-        }
+//         pub fn m1(obj: &dyn FooTrait) -> u32 {
+//             obj.method()
+//         }
 
         pub fn m2(obj: &dyn FooTrait) -> u32 {
             obj.method()

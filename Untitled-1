@@ -1,0 +1,3 @@
+src/conditionally_compiled/src/lib.rs:12
+src/traits/src/lib.rs:32-34
+src/structs/src/lib/thin.rs:14-16

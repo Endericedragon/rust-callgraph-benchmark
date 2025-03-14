@@ -21,9 +21,9 @@ impl Fat {
     // Note the pub modifier missing from the method signature, rendering it invisible to the
     // outside world.
     #[allow(dead_code)]
-    fn yet_another_method(&self) -> u32 {
-        self.0 + 2
-    }
+//     fn yet_another_method(&self) -> u32 {
+//         self.0 + 2
+//     }
 
     pub fn default_method_no_self() -> u32 {
        1
